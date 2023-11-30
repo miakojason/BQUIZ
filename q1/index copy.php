@@ -1,4 +1,3 @@
-<?php include_once "./db.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,14 +13,15 @@
     	<a style="position:absolute; right:3px; top:4px; cursor:pointer; z-index:9999;" onclick="cl('#cover')">X</a>
         <div id="cvr" style="position:absolute; width:99%; height:100%; margin:auto; z-index:9898;"></div>
     </div>
-</div>
-    <header class="container">
-        <img src="" alt="">
-    </header>
-    <main class="container ">
+</div>    
+<header class="container">
+<img src="" alt="">
+</header>
+<main class="container">
 <h3 class="text-center">網站標題管理</h3>
+<hr>
 <form action="" method="post">
-<table class="table table-bordered text-center">
+<table class='table table-bordered text-center'>
     <tr>
         <td>網站標題</td>
         <td>替代文字</td>
@@ -29,21 +29,13 @@
         <td>刪除</td>
         <td></td>
     </tr>
-    <?php
-    $rows=$Title->all();
-    foreach($rows as $row){
-     ?>
     <tr>
-        <td><img src="./img/<?=$row['img'];?>"style="width: 300px; height:30px"></td>
-        <td><input type="text" name="text[]" id="" value="<?=$row['text']; ?>" style="width:90%"></td>
-        <td><input type="radio" name="sh" id=""></td>
-        <td><input type="checkbox" name="del[]" id="" value="<?=$row['id'];?>"></td>
-        <td><input class="btn btn-primary" type="button" value="更新圖片"></td>
-        <input type="hidden" name="id[]" value="<?=$row['id'];?>">
+        <td><img src="" style="width:300px;height:30px"></td>
+        <td><input type="text" name="" id="" style="width:90%"></td>
+        <td><input type="radio" name="" id=""></td>
+        <td><input type="checkbox" name="" id=""></td>
+        <td><input class='btn btn-primary' type="button" value="更新圖片"></td>
     </tr>
-    <?php
-    }
-    ?>
 </table>
 <div class="d-flex justify-content-between">
     <div><input type="button" onclick="op('#cover','#cvr','title.php')" value="新增網站標題圖片"></div>
@@ -54,9 +46,9 @@
     <div></div>
 </div>
 </form>
-    </main>
+</main>
 <script src="../js/jquery-3.4.1.min.js"></script>
 <script src="../js/js.js"></script>
-<script src="../js/bootstrap.js"></script>  
+<script src="../js/bootstrap.js"></script>
 </body>
 </html>
