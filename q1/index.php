@@ -15,8 +15,12 @@
         <div id="cvr" style="position:absolute; width:99%; height:100%; margin:auto; z-index:9898;"></div>
     </div>
 </div>
-    <header class="container">
-        <img src="" alt="">
+    <header class="container text-center">
+        <?php
+        $img=$Title->find(['sh'=>1]);
+        // dd($img);
+        ?>
+        <img src="./img//<?=$img['img'];?>" alt="">
     </header>
     <main class="container">
 <h3 class="text-center">網站標題管理</h3>

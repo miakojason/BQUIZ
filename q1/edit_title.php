@@ -10,9 +10,8 @@ foreach($_POST['id'] as $key => $id){
         $row['sh']=($id==$_POST['sh'])?1:0;
         $Title->save($row);
     }
-   
 }
-header("location:index.php");
 
+header("location:index.php");
 
 ?>
